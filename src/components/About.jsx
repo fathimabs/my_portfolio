@@ -21,8 +21,7 @@ export default function About() {
         </div>
 
         <div className="order-1 md:order-2">
-          <h3 className="text-2xl sm:text-3xl font-bold uppercase tracking-wide text-accent mb-4">
-            About Me
+          <h3 className="section-title">About Me
           </h3>
 
           <p className="text-muted leading-relaxed mb-8">
