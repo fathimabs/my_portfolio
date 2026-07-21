@@ -1,12 +1,15 @@
 import { useState } from 'react'
-import { skills, education } from '../data'
+import { skills, education, experience } from '../data'
 
 const tabs = [
   { id: 'skills', label: 'Skills' },
+  { id: 'experience', label: 'Experience' },
   { id: 'education', label: 'Education' },
+
 ]
 
 export default function About() {
+
   const [activeTab, setActiveTab] = useState('skills')
 
   return (
@@ -25,9 +28,16 @@ export default function About() {
           </h3>
 
           <p className="text-muted leading-relaxed mb-8">
-            I'm a full-stack developer experienced in React and the MERN stack (JavaScript,
-            MongoDB, Express.js, React.js, Node.js). I enjoy building clean, user-friendly
-            applications and working across both frontend and backend.
+            MERN Stack Developer with practical experience in developing responsive,
+            user-focused web applications using React.js, Node.js, Express.js and MongoDB.
+            Experienced in building complete web solutions with RESTful APIs,
+            JWT Authentication, Redux, Multer, Cloudinary and Tailwind CSS.
+            Familiar with Git, GitHub, Postman and Figma, with experience deploying applications
+            using Vercel, Netlify and Render.
+            Passionate about transforming ideas into scalable, maintainable and high-quality
+            web applications while continuously expanding technical expertise and
+            embracing modern development practices.
+            Currently exploring AI integration in web applications using OpenAI APIs and modern JavaScript technologies.
           </p>
 
           <div className="flex gap-6 sm:gap-8 text-sm font-semibold border-b border-border">
@@ -35,11 +45,10 @@ export default function About() {
               <button
                 key={t.id}
                 onClick={() => setActiveTab(t.id)}
-                className={`pb-3 border-b-2 -mb-px transition-colors ${
-                  activeTab === t.id
-                    ? 'text-accent border-accent'
-                    : 'border-transparent text-muted hover:text-accent'
-                }`}
+                className={`pb-3 border-b-2 -mb-px transition-colors ${activeTab === t.id
+                  ? 'text-accent border-accent'
+                  : 'border-transparent text-muted hover:text-accent'
+                  }`}
               >
                 {t.label}
               </button>
@@ -48,20 +57,36 @@ export default function About() {
 
           <div className="mt-6 text-sm leading-relaxed">
             {activeTab === 'skills' && (
-              <p >Web App Development</p>
+              <p className="text-muted">Web App Development</p>
+            )}
+
+
+            {activeTab === 'experience' && (
+              <div className="space-y-2">
+                {experience.map((ex) => (
+                  <div key={ex.company}>
+                    <p className=" font-semibold  text-accent">{ex.period}</p>
+                    <p className="text-muted">{ex.company}</p>
+                  </div>
+
+                ))}
+              </div>
             )}
 
             {activeTab === 'education' && (
               <div className="space-y-2">
                 {education.map((ed) => (
                   <div key={ed.institute}>
-                    <p className="font-bold text-text">{ed.degree}</p>
+                    <p className="font-bold text-accent">{ed.period}</p>
                     <p className="text-muted">{ed.institute}</p>
-                    <p className="text-muted">{ed.period}</p>
+
                   </div>
                 ))}
               </div>
             )}
+
+
+
           </div>
         </div>
       </div>

@@ -4,16 +4,17 @@ import { BriefcaseIcon, GraduationCapIcon } from './Icons'
 // Merge work experience and education into a single chronological-style
 // timeline, each tagged with a `type` so we can pick the right icon.
 const timeline = [
-  ...experience,
-  ...education.map((ed) => ({
+  experience[0], // Job Junction
+  experience[1], // Softzane Solutions
+  experience[2], // Angular Internship
+  {
     type: 'education',
-    role: ed.degree,
-    company: ed.institute,
-    period: ed.period,
+    role: education[0].degree,
+    company: education[0].institute,
+    period: education[0].period,
     points: [],
-  })),
-]
-
+  },
+];
 export default function Experience() {
   return (
     <section id="experience" className="section">

@@ -7,7 +7,7 @@ export default function Hero() {
       className="min-h-[90vh] flex flex-col-reverse md:flex-row items-center justify-center gap-12 md:gap-20 max-w-content mx-auto px-6 sm:px-8 py-16"
     >
       <div className="max-w-xl text-center md:text-left">
-        <h1 className="text-3xl sm:text-5xl font-bold mb-2">Hi There! 👋</h1>
+        <h1 className="text-2xl sm:text-4xl font-bold mb-2 text-accent">Hi There! 👋</h1>
         <h1 className="text-3xl sm:text-5xl font-bold mb-4">I'm {profile.name}</h1>
         <h2 className="text-xl sm:text-2xl font-semibold text-text mb-6">{profile.role}</h2>
 

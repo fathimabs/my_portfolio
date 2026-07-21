@@ -11,7 +11,10 @@ export default function Contact() {
   return (
     <section id="contact" className="section text-center">
       <h3 className="section-title">Contact</h3>
-      <p className="text-muted mb-12 px-4">Feel free to reach out to me for any questions or opportunities!</p>
+      <p className="text-muted mb-12 px-4">
+        I'm always open to discussing new opportunities,
+        exciting projects, or collaborations. Feel free to reach out anytime.
+      </p>
 
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-3xl mx-auto">
         {details.map(({ label, value, Icon, href }) => (
