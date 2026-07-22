@@ -8,7 +8,7 @@ export const profile = {
   role: 'MERN Stack Developer',
   tagline:
     'Bringing ideas to life through interactive experiences and modern tech. Explore my world of creativity and code.',
-  resumeUrl: '/Fathima B S(React_Developer).pdf',
+  resumeUrl: '/Fathima B S(Full Stack Developer).pdf',
 }
 
 
