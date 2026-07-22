@@ -4,7 +4,7 @@ A clean, responsive one-page developer portfolio.A modern,clean and responsive p
 
 ## 🚀 Live Demo
 
-https://your-portfolio-url.com
+https://fathimabs-portfolio.vercel.app
 
 ## Run it locally
 
