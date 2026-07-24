@@ -24,10 +24,12 @@ export const navLinks = [
 // Simple label list — used in the About "Skills" tab.
 export const skills = [
   ' React.js',
+  'React Native',
   'Node.js',
   'Express.js',
   ' MongoDB',
   'JavaScript (ES6+)',
+  'TypeScript',
   'Tailwind CSS',
   'Redux',
   'REST APIs',
@@ -49,7 +51,9 @@ export const skills = [
 
 export const techStack = [
   { name: 'React.js', icon: 'devicon-react-original colored' },
+  { name: "React Native", icon: "devicon-react-original" },
   { name: 'JavaScript (ES6+)', icon: 'devicon-javascript-plain colored' },
+  { name: "TypeScript", icon: "devicon-typescript-plain" },
   { name: 'Node.js', icon: 'devicon-nodejs-plain colored' },
   { name: 'Express.js', icon: 'devicon-express-original' },
   { name: 'MongoDB', icon: 'devicon-mongodb-plain colored' },
@@ -67,6 +71,7 @@ export const techStack = [
   { name: 'GitHub', icon: 'devicon-github-original' },
   { name: 'Postman', icon: 'devicon-postman-plain colored' },
   { name: 'Figma', icon: 'devicon-figma-plain colored' },
+  { name: "Expo", image: '/icons/expo.png' },
 
   { name: 'Render', reactIcon: SiRender },
   { name: 'Netlify', icon: 'devicon-netlify-plain colored' },
@@ -174,6 +179,13 @@ export const projects = [
     stack: ['React', 'Node.js', 'Express.js', 'MongoDB', 'Tailwind CSS', 'Context API', 'redux'],
     link: 'https://github.com/fathimabs/carRentalservice',
   },
+  {
+    name: "Weather App",
+    description: "Built from scratch as part of my self-directed React Native learning journey. Developed a  weather application using Expo and the OpenWeatherMap API to display real-time weather information by city. Implemented API integration, asynchronous data fetching, state management  and a clean mobile-friendly UI.",
+    stack: ["React Native", "Expo", "TypeScript", "OpenWeatherMap API"],
+    link: "https://github.com/fathimabs/WeatherApp"
+  },
+
   {
     name: 'SpiceHeaven',
     description:
